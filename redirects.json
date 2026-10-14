@@ -528,5 +528,220 @@
     "source": "/medical-marijuana-hemp-and-cannabis-history-of-use-and-the-untold-story/",
     "destination": "/blog/medical-marijuana-hemp-and-cannabis-history-of-use-and-the-untold-story",
     "statusCode": 301
+  },
+  {
+    "source": "/category/state/arizona-and-cannabis/",
+    "destination": "/category/state/arizona-and-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/banking/",
+    "destination": "/category/banking",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/business-insurance/",
+    "destination": "/category/business-insurance",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/california-marijuana-laws/",
+    "destination": "/category/state/california-marijuana-laws",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/cannabis-business/",
+    "destination": "/category/cannabis-business",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/cannabis-industry-investment/",
+    "destination": "/category/cannabis-industry-investment",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/cannabis-industry-size/",
+    "destination": "/category/cannabis-industry-size",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/cbd/",
+    "destination": "/category/cbd",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/controlled-substance-act/",
+    "destination": "/category/controlled-substance-act",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/decriminalizing-marijuana-use/",
+    "destination": "/category/decriminalizing-marijuana-use",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/diabetes-and-marijuana/",
+    "destination": "/category/diabetes-and-marijuana",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/export-hemp-and-cannabis/",
+    "destination": "/category/export-hemp-and-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/federal/",
+    "destination": "/category/federal",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/global-trends/",
+    "destination": "/category/global-trends",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/health-benefits-of-cannabis/",
+    "destination": "/category/health-benefits-of-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/hemp-farming/",
+    "destination": "/category/hemp-farming",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/hemp-oil/",
+    "destination": "/category/hemp-oil",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/hemp-products/",
+    "destination": "/category/hemp-products",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/illinois-and-cannabis/",
+    "destination": "/category/state/illinois-and-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/indiana/",
+    "destination": "/category/state/indiana",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/industrial-hemp/",
+    "destination": "/category/industrial-hemp",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/investment/",
+    "destination": "/category/investment",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/legal/",
+    "destination": "/category/legal",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/marijuana-health-benefits/",
+    "destination": "/category/marijuana-health-benefits",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/marijuana-law-changes-needed/",
+    "destination": "/category/marijuana-law-changes-needed",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/market-size/",
+    "destination": "/category/market-size",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/medical-cannabis/",
+    "destination": "/category/medical-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/medical-marijuana-taxation/",
+    "destination": "/category/medical-marijuana-taxation",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/mexican-drug-cartels/",
+    "destination": "/category/mexican-drug-cartels",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/michigan-and-cannabis/",
+    "destination": "/category/state/michigan-and-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/new-york-and-cannabis/",
+    "destination": "/category/state/new-york-and-cannabis",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/nutrition/",
+    "destination": "/category/nutrition",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/obesity-and-marijuana/",
+    "destination": "/category/obesity-and-marijuana",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/oregon/",
+    "destination": "/category/state/oregon",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/pain-therapy-with-marijuana/",
+    "destination": "/category/pain-therapy-with-marijuana",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/parkinson-treatment-with-marijuana/",
+    "destination": "/category/parkinson-treatment-with-marijuana",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/pharmacology/",
+    "destination": "/category/pharmacology",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/",
+    "destination": "/category/state",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state-trends-cannabis-laws/",
+    "destination": "/category/state-trends-cannabis-laws",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/taxation/",
+    "destination": "/category/taxation",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/uncategorized/",
+    "destination": "/category/uncategorized",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/vaping/",
+    "destination": "/category/vaping",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/state/vermont/",
+    "destination": "/category/state/vermont",
+    "statusCode": 301
   }
 ]

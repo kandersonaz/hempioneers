@@ -6,6 +6,7 @@ import html from "remark-html";
 
 const postsDir = path.join(process.cwd(), "content", "posts");
 const pagesDir = path.join(process.cwd(), "content", "pages");
+const categoriesFile = path.join(process.cwd(), "content", "categories.json");
 
 export type PostMeta = {
   title: string;
@@ -19,6 +20,16 @@ export type PostMeta = {
   coverImage?: string;
   coverImageAlt?: string;
   originalUrl?: string;
+};
+
+export type CategoryMeta = {
+  id: number;
+  name: string;
+  slug: string;
+  description: string;
+  path: string;
+  parent: number;
+  count: number;
 };
 
 export type PageMeta = {
@@ -94,4 +105,44 @@ export function getAllPages(): (PageMeta & { contentHtml: string })[] {
 export function getPageByPath(segments: string[]) {
   const pagePath = "/" + segments.join("/");
   return getAllPages().find((p) => p.path === pagePath);
+}
+
+export function getAllCategories(): CategoryMeta[] {
+  if (!fs.existsSync(categoriesFile)) return [];
+  const raw = JSON.parse(fs.readFileSync(categoriesFile, "utf8")) as Array<{
+    id: number;
+    name: string;
+    slug: string;
+    description?: string;
+    link: string;
+    parent: number;
+    count: number;
+  }>;
+  return raw.map((c) => ({
+    id: c.id,
+    name: decodeEntities(c.name),
+    slug: c.slug,
+    description: decodeEntities(c.description || ""),
+    path: new URL(c.link).pathname.replace(/\/$/, "") || "/category",
+    parent: c.parent,
+    count: c.count,
+  }));
+}
+
+export function getCategoryByPath(segments: string[]) {
+  const categoryPath = "/category/" + segments.join("/");
+  return getAllCategories().find((c) => c.path === categoryPath);
+}
+
+export function getCategoryBySlug(slug: string) {
+  return getAllCategories().find((c) => c.slug === slug);
+}
+
+export function getPostsByCategorySlug(slug: string) {
+  const category = getCategoryBySlug(slug);
+  if (!category) return [];
+  const nameKey = category.name.toLowerCase();
+  return getAllPosts().filter((post) =>
+    (post.categories || []).some((c) => c.toLowerCase() === nameKey)
+  );
 }

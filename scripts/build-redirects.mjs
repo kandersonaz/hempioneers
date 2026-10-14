@@ -10,30 +10,36 @@ const csv = fs
   .split(/\r?\n/)
   .slice(1);
 
+const categories = JSON.parse(
+  fs.readFileSync(path.join(root, "content", "categories.json"), "utf8")
+);
+
 const seen = new Set();
 const redirects = [];
 
-function add(source, destination) {
+function add(source, destination, statusCode = 301) {
+  const key = `${source}=>${destination}`;
+  if (seen.has(key)) return;
+  seen.add(key);
+  redirects.push({ source, destination, statusCode });
+}
+
+function addPair(source, destination) {
   const normalized = source.replace(/\/$/, "") || "/";
-  if (seen.has(normalized)) return;
-  seen.add(normalized);
-  // Match both /slug and /slug/ so WP trailing-slash URLs redirect in one hop
-  redirects.push({
-    source: normalized,
-    destination,
-    statusCode: 301,
-  });
-  redirects.push({
-    source: `${normalized}/`,
-    destination,
-    statusCode: 301,
-  });
+  add(normalized, destination);
+  add(`${normalized}/`, destination);
 }
 
 for (const line of csv) {
   if (!line.trim()) continue;
   const [source, destination] = line.split(",");
-  add(source, destination);
+  addPair(source, destination);
+}
+
+// Categories keep surviving /category/... URLs; 301 trailing-slash → canonical
+for (const c of categories) {
+  const categoryPath = new URL(c.link).pathname.replace(/\/$/, "");
+  add(`${categoryPath}/`, categoryPath, 301);
 }
 
 fs.writeFileSync(

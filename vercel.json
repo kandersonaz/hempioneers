@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "hempioneers.com" }],
+      "destination": "https://www.hempioneers.com/:path*",
+      "permanent": true
+    }
+  ]
+}

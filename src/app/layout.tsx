@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hempioneers.com"),
   title: {
     default: "Hempioneers",
     template: "%s · Hempioneers",
