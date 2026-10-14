@@ -12,8 +12,7 @@ export default function HomePage() {
           <div>
             <h1>Hempioneers</h1>
             <p>
-              Independent coverage of cannabis science, policy, and industry —
-              preserved as a fast static archive.
+              Independent coverage of cannabis science, policy, and industry.
             </p>
             <div className="cta-row">
               <Link href="/blog" className="btn btn-primary">

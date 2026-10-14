@@ -10,7 +10,7 @@ export function SiteFooter() {
           </Link>
         </p>
         <p className="muted">
-          Cannabis industry news, science, and policy — archived static edition.
+          Cannabis industry news, science, and policy.
         </p>
       </div>
     </footer>
