@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteHeader() {
@@ -5,7 +6,14 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="wrap header-inner">
         <Link href="/" className="brand">
-          Hempioneers
+          <Image
+            src="/logo.png"
+            alt="Hempioneers"
+            width={220}
+            height={56}
+            className="brand-logo"
+            priority
+          />
         </Link>
         <nav className="nav">
           <Link href="/blog">Blog</Link>

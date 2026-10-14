@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PostCard } from "@/components/PostCard";
 import { getAllPosts } from "@/lib/content";
@@ -10,7 +11,16 @@ export default function HomePage() {
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <h1>Hempioneers</h1>
+            <h1 className="hero-brand">
+              <Image
+                src="/logo.png"
+                alt="Hempioneers"
+                width={420}
+                height={108}
+                className="hero-logo"
+                priority
+              />
+            </h1>
             <p>
               Independent coverage of cannabis science, policy, and industry.
             </p>
