@@ -59,9 +59,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(12px);
-  background: rgba(243, 246, 241, 0.82);
-  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, #0f1f16 0%, #163524 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header-inner {
@@ -90,18 +89,6 @@ img {
   height: 2.25rem;
 }
 
-.hero-brand {
-  margin: 0 0 0.75rem;
-  line-height: 0;
-}
-
-.hero-logo {
-  width: min(420px, 100%);
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -112,11 +99,11 @@ img {
 
 .nav a {
   text-decoration: none;
-  color: var(--muted);
+  color: rgba(232, 239, 230, 0.82);
 }
 
 .nav a:hover {
-  color: var(--leaf-deep);
+  color: #fff;
 }
 
 .hero {
@@ -127,6 +114,15 @@ img {
   display: grid;
   gap: 1.5rem;
   align-items: end;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6.5vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+  max-width: 14ch;
 }
 
 .hero p {
@@ -316,9 +312,14 @@ img {
 }
 
 .site-footer {
-  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, #163524 0%, #0f1f16 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 2rem 0 3rem;
   margin-top: 1rem;
+}
+
+.site-footer .muted {
+  color: rgba(232, 239, 230, 0.7);
 }
 
 .footer-inner {
